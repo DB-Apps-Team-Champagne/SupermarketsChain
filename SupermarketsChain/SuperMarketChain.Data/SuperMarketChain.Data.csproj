@@ -56,7 +56,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\02. Database applications\Database-Apps-Teamwork-Project\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Model\SuperMarketChain.Model.csproj">
+    <ProjectReference Include="..\SuperMarketChain.Model\SuperMarketChain.Model.csproj">
       <Project>{7f9cbdde-1e76-4195-941d-2e6c58bca3a2}</Project>
       <Name>SuperMarketChain.Model</Name>
     </ProjectReference>

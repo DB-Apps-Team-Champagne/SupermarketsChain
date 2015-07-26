@@ -14,6 +14,7 @@ namespace SuperMarketChain.Client
             var context = new SupermarketChainContext();
 
             var productCount = context.Products.Count();
+            Console.WriteLine(productCount);
         }
     }
 }
