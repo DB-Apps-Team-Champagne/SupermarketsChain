@@ -1,6 +1,6 @@
-F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.csprojResolveAssemblyReference.cache
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\OracleToSQL.dll
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\OracleToSQL.pdb
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\Oracle.DataAccess.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.csprojResolveAssemblyReference.cache
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.dll
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.pdb
