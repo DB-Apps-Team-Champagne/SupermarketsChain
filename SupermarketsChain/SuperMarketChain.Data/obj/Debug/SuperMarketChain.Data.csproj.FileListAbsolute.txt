@@ -20,3 +20,13 @@ C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChai
 C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Data\obj\Debug\SuperMarketChain.Data.csprojResolveAssemblyReference.cache
 C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Data\obj\Debug\SuperMarketChain.Data.dll
 C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Data\obj\Debug\SuperMarketChain.Data.pdb
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\SuperMarketChain.Data.dll.config
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\SuperMarketChain.Data.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\SuperMarketChain.Data.pdb
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\SyperMarketChain.Model.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\SyperMarketChain.Model.pdb
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\EntityFramework.xml
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\obj\Debug\SuperMarketChain.Data.csprojResolveAssemblyReference.cache
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\obj\Debug\SuperMarketChain.Data.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\obj\Debug\SuperMarketChain.Data.pdb

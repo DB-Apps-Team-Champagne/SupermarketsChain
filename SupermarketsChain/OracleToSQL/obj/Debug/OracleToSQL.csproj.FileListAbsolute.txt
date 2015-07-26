@@ -4,3 +4,8 @@ C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChai
 C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.csprojResolveAssemblyReference.cache
 C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.dll
 C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.pdb
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\OracleToSQL.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\OracleToSQL.pdb
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.csprojResolveAssemblyReference.cache
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.pdb

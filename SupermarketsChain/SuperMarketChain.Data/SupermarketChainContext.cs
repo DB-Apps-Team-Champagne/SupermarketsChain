@@ -4,12 +4,14 @@ namespace SuperMarketChain.Data
     using System;
     using System.Data.Entity;
     using System.Linq;
+    using Migrations;
 
     public class SupermarketChainContext : DbContext
     {
         public SupermarketChainContext()
             : base("name=SupermarketChainContext")
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<SupermarketChainContext, Configuration>());
         }
 
         public IDbSet<Measure> Measures { get; set; }
