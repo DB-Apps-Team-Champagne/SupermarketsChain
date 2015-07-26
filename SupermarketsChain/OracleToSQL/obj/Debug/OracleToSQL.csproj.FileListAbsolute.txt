@@ -1,0 +1,6 @@
+C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\OracleToSQL\bin\Debug\OracleToSQL.dll
+C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\OracleToSQL\bin\Debug\OracleToSQL.pdb
+C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\OracleToSQL\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.csprojResolveAssemblyReference.cache
+C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.dll
+C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.pdb
