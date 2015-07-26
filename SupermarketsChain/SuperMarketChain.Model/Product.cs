@@ -22,7 +22,7 @@ namespace SuperMarketChain.Model
         public int MeasureID { get; set; }
 
         [Required]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
 
         public virtual Vendor Vendor { get; set; }
 

@@ -1,41 +1,15 @@
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.exe.config
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.exe
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.pdb
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.dll
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.SqlServer.dll
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Data.dll
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SyperMarketChain.Model.dll
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SyperMarketChain.Model.pdb
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Data.pdb
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.xml
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.SqlServer.xml
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.csprojResolveAssemblyReference.cache
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.exe
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.pdb
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02. Database applications\Database-Apps-Teamwork-Project\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.exe.config
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02. Database applications\Database-Apps-Teamwork-Project\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.exe
-D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02. Database applications\Database-Apps-Teamwork-Project\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.pdb
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.exe.config
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.exe
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.pdb
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.exe
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.pdb
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Data.dll
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SyperMarketChain.Model.dll
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SyperMarketChain.Model.pdb
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Data.pdb
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.xml
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.csprojResolveAssemblyReference.cache
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.csprojResolveAssemblyReference.cache
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.exe.config
-F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.exe
-F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.pdb
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.exe
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.pdb
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\OracleToSQL.dll
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Data.dll
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SyperMarketChain.Model.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\Oracle.DataAccess.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\OracleToSQL.pdb
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SyperMarketChain.Model.pdb
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Data.pdb
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.xml
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.SqlServer.xml
-F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.csprojResolveAssemblyReference.cache
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.exe
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.pdb

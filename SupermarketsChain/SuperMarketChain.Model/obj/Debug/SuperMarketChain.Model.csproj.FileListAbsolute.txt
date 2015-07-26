@@ -8,3 +8,8 @@ C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChai
 C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Model\obj\Debug\SuperMarketChain.Model.csprojResolveAssemblyReference.cache
 C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Model\obj\Debug\SyperMarketChain.Model.dll
 C:\Users\Evgeni\Documents\Visual Studio 2013\Projects\DBApps\TW\SupermarketsChain\SuperMarketChain.Model\obj\Debug\SyperMarketChain.Model.pdb
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Model\bin\Debug\SyperMarketChain.Model.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Model\bin\Debug\SyperMarketChain.Model.pdb
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Model\obj\Debug\SuperMarketChain.Model.csprojResolveAssemblyReference.cache
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Model\obj\Debug\SyperMarketChain.Model.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\SuperMarketChain.Model\obj\Debug\SyperMarketChain.Model.pdb

@@ -56,6 +56,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OracleToSQL\OracleToSQL.csproj">
+      <Project>{13b3028e-e1c9-48be-b5d2-0414344ced0e}</Project>
+      <Name>OracleToSQL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SuperMarketChain.Model\SuperMarketChain.Model.csproj">
       <Project>{7f9cbdde-1e76-4195-941d-2e6c58bca3a2}</Project>
       <Name>SuperMarketChain.Model</Name>
