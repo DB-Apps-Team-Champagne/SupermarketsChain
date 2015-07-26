@@ -20,7 +20,7 @@ namespace SuperMarketChain.Client
 
             var prodFields = new String[] { "id", "vendorid", "productname", "measureid", "price" };
 
-            var prodData = OracleToSQL.OracleToSQL.GetProductTable("Barish", "admin", "admin", "Products", prodFields);
+            var prodData = OracleToSQL.OracleToSQL.GetProductTable("Barish", "admin", "admin", "PRODUCTS", prodFields);
 
             var measFields = new String[] { "id", "measurename" };
 
@@ -32,7 +32,7 @@ namespace SuperMarketChain.Client
 
             foreach (Vendor item in vendorData)
             {
-                Console.WriteLine(item.VendorName);
+               Console.WriteLine(item.VendorName);
             }
         }
     }

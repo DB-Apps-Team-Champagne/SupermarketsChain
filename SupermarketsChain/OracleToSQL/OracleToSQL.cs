@@ -34,11 +34,11 @@ namespace OracleToSQL
             ICollection<Product> products = new HashSet<Product>();
 
             while(dr.Read()) {
-                int id = dr.GetInt32(0);
-                int vendorId = dr.GetInt32(1);
-                string productName = dr.GetString(2);
-                int measureId = dr.GetInt32(3);
-                decimal price = dr.GetDecimal(4);
+                int id = Int32.Parse(dr[0].ToString());
+                int vendorId = Int32.Parse(dr[1].ToString());
+                string productName = dr[2].ToString();
+                int measureId = Int32.Parse(dr[3].ToString());
+                decimal price = Decimal.Parse(dr[4].ToString());
 
                 Product product = new Product(id, vendorId, productName, measureId, price);
 
@@ -74,8 +74,8 @@ namespace OracleToSQL
 
             while (dr.Read())
             {
-                int id = dr.GetInt32(0);
-                string measureName = dr.GetString(1);
+                int id = Int32.Parse(dr[0].ToString());
+                string measureName = dr[1].ToString();
 
                 Measure measure = new Measure(id, measureName);
 
@@ -111,8 +111,8 @@ namespace OracleToSQL
 
             while (dr.Read())
             {
-                int id = dr.GetInt32(0);
-                string vendorName = dr.GetString(1);
+                int id = Int32.Parse(dr[0].ToString());
+                string vendorName = dr[1].ToString();
 
                 Vendor vendor = new Vendor(id, vendorName);
 
