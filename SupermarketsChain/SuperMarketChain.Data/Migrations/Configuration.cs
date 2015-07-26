@@ -12,6 +12,7 @@ namespace SuperMarketChain.Data.Migrations
         {
             AutomaticMigrationsEnabled = true;
             ContextKey = "SuperMarketChain.Data.SupermarketChainContext";
+            AutomaticMigrationDataLossAllowed = true;
             
         }
 
@@ -58,7 +59,7 @@ namespace SuperMarketChain.Data.Migrations
                 context.Products.Add(new Product
                 {
                     MeasureID = 3,
-                    VendorId = 2,
+                    VendorId = 1,
                     Price = 0.99m,
                     ProductName = "Bira (mnogo silna)"
                 });
@@ -66,7 +67,7 @@ namespace SuperMarketChain.Data.Migrations
                 context.Products.Add(new Product
                 {
                     MeasureID = 3,
-                    VendorId = 2,
+                    VendorId = 1,
                     Price = 0.49m,
                     ProductName = "Bira (mnogo slaba)"
                 });
@@ -74,7 +75,7 @@ namespace SuperMarketChain.Data.Migrations
                 context.Products.Add(new Product
                 {
                     MeasureID = 3,
-                    VendorId = 2,
+                    VendorId = 1,
                     Price = 0.39m,
                     ProductName = "Bira (bez alkohol)"
                 });
@@ -82,7 +83,7 @@ namespace SuperMarketChain.Data.Migrations
                 context.Products.Add(new Product
                 {
                     MeasureID = 2,
-                    VendorId = 3,
+                    VendorId = 2,
                     Price = 6.99m,
                     ProductName = "Vodka (mnogo silna)"
                 });
@@ -90,7 +91,7 @@ namespace SuperMarketChain.Data.Migrations
                 context.Products.Add(new Product
                 {
                     MeasureID = 2,
-                    VendorId = 3,
+                    VendorId = 2,
                     Price = 4.99m,
                     ProductName = "Vodka (mnogo slaba)"
                 });
@@ -98,7 +99,7 @@ namespace SuperMarketChain.Data.Migrations
                 context.Products.Add(new Product
                 {
                     MeasureID = 2,
-                    VendorId = 3,
+                    VendorId = 2,
                     Price = 14.99m,
                     ProductName = "Vodka smurt"
                 });
@@ -106,7 +107,7 @@ namespace SuperMarketChain.Data.Migrations
                 context.Products.Add(new Product
                 {
                     MeasureID = 1,
-                    VendorId = 4,
+                    VendorId = 3,
                     Price = 0.99m,
                     ProductName = "Shokolad"
                 });
@@ -114,7 +115,7 @@ namespace SuperMarketChain.Data.Migrations
                 context.Products.Add(new Product
                 {
                     MeasureID = 1,
-                    VendorId = 4,
+                    VendorId = 3,
                     Price = 0.49m,
                     ProductName = "Fafla"
                 });
@@ -122,7 +123,7 @@ namespace SuperMarketChain.Data.Migrations
                 context.Products.Add(new Product
                 {
                     MeasureID = 3,
-                    VendorId = 4,
+                    VendorId = 3,
                     Price = 1.49m,
                     ProductName = "Sok ot praskovi"
                 });
@@ -135,7 +136,7 @@ namespace SuperMarketChain.Data.Migrations
                     ProductId = 1,
                     Quantity = 15d,
                     SaleTime = DateTime.Now,
-                    VendorId = 2
+                    VendorId = 1
                 });
 
                 context.SaleReports.Add(new SaleReport
@@ -143,7 +144,7 @@ namespace SuperMarketChain.Data.Migrations
                     ProductId = 2,
                     Quantity = 125d,
                     SaleTime = DateTime.Now,
-                    VendorId = 2
+                    VendorId = 1
                 });
 
                 context.SaleReports.Add(new SaleReport
@@ -151,7 +152,7 @@ namespace SuperMarketChain.Data.Migrations
                     ProductId = 5,
                     Quantity = 56d,
                     SaleTime = DateTime.Now,
-                    VendorId = 3
+                    VendorId = 2
                 });
             }
         }
