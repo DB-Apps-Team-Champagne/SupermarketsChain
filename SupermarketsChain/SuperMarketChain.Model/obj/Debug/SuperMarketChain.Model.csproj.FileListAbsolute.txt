@@ -1,0 +1,5 @@
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02. Database applications\Database-Apps-Teamwork-Project\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Model\bin\Debug\SyperMarketChain.Model.dll
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02. Database applications\Database-Apps-Teamwork-Project\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Model\bin\Debug\SyperMarketChain.Model.pdb
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02. Database applications\Database-Apps-Teamwork-Project\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Model\obj\Debug\SuperMarketChain.Model.csprojResolveAssemblyReference.cache
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02. Database applications\Database-Apps-Teamwork-Project\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Model\obj\Debug\SyperMarketChain.Model.dll
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02. Database applications\Database-Apps-Teamwork-Project\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Model\obj\Debug\SyperMarketChain.Model.pdb

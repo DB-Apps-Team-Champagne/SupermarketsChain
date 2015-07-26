@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarketChain.Model", "SuperMarketChain.Model\SuperMarketChain.Model.csproj", "{7F9CBDDE-1E76-4195-941D-2E6C58BCA3A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarketChain.Data", "..\..\..\..\..\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\SuperMarketChain.Data.csproj", "{2B97ADDF-AF45-4C50-8F6C-5FC35A092999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarketChain.Client", "..\..\..\..\..\..\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\SuperMarketChain.Client.csproj", "{5A60C6E5-4BE2-40FA-8165-F3989EFE5F9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{7F9CBDDE-1E76-4195-941D-2E6C58BCA3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F9CBDDE-1E76-4195-941D-2E6C58BCA3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F9CBDDE-1E76-4195-941D-2E6C58BCA3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B97ADDF-AF45-4C50-8F6C-5FC35A092999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B97ADDF-AF45-4C50-8F6C-5FC35A092999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B97ADDF-AF45-4C50-8F6C-5FC35A092999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B97ADDF-AF45-4C50-8F6C-5FC35A092999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A60C6E5-4BE2-40FA-8165-F3989EFE5F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A60C6E5-4BE2-40FA-8165-F3989EFE5F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A60C6E5-4BE2-40FA-8165-F3989EFE5F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A60C6E5-4BE2-40FA-8165-F3989EFE5F9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
