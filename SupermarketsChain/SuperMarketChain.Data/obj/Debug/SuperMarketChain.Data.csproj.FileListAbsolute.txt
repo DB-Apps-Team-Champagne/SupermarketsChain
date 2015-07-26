@@ -1,0 +1,12 @@
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\SuperMarketChain.Data.dll.config
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\SuperMarketChain.Data.dll
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\SuperMarketChain.Data.pdb
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\EntityFramework.dll
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\SyperMarketChain.Model.dll
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\SyperMarketChain.Model.pdb
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\EntityFramework.xml
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\obj\Debug\SuperMarketChain.Data.csprojResolveAssemblyReference.cache
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\obj\Debug\SuperMarketChain.Data.dll
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back-End Level\02.~\Da~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Data\obj\Debug\SuperMarketChain.Data.pdb

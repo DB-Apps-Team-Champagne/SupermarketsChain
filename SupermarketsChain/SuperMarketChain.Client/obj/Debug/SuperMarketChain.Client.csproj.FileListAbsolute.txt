@@ -1,0 +1,14 @@
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.exe.config
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.exe
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Client.pdb
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.dll
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.SqlServer.dll
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Data.dll
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SyperMarketChain.Model.dll
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SyperMarketChain.Model.pdb
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\SuperMarketChain.Data.pdb
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.xml
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\bin\Debug\EntityFramework.SqlServer.xml
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.csprojResolveAssemblyReference.cache
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.exe
+D:\Evgeni\programirane\saitove\SoftUni\Courses\Back~1\02.~1\Datab~1\GitRepo\SupermarketsChain\SupermarketsChain\SuperMarketChain.Client\obj\Debug\SuperMarketChain.Client.pdb
