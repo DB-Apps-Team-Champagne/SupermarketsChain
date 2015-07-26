@@ -13,30 +13,35 @@ namespace SuperMarketChain.Client
     {
         static void Main()
         {
-            var context = new SupermarketChainContext();
+            Excel ex = new Excel();
+            ex.unZip();
+            ex.folderLoop();
+            ex.deleteFolder();
 
-            var productCount = context.Products.Count();
+            //var context = new SupermarketChainContext();
 
-            Console.WriteLine(productCount);
+            //var productCount = context.Products.Count();
 
-            var prodFields = new String[] { "id", "vendorid", "productname", "measureid", "price" };
+            //Console.WriteLine(productCount);
 
-            var prodData = OracleToSQL.OracleToSQL.GetProductTable("Barish", "admin", "admin", "PRODUCTS", prodFields);
+            //var prodFields = new String[] { "id", "vendorid", "productname", "measureid", "price" };
 
-            var measFields = new String[] { "id", "measurename" };
+            //var prodData = OracleToSQL.OracleToSQL.GetProductTable("Barish", "admin", "admin", "PRODUCTS", prodFields);
 
-            var measData = OracleToSQL.OracleToSQL.GetMeasureTable("Barish", "admin", "admin", "Measures", measFields);
+            //var measFields = new String[] { "id", "measurename" };
 
-            var vendorFields = new String[] { "id", "vendorname" };
+            //var measData = OracleToSQL.OracleToSQL.GetMeasureTable("Barish", "admin", "admin", "Measures", measFields);
 
-            var vendorData = OracleToSQL.OracleToSQL.GetVendorTable("Barish", "admin", "admin", "Vendors", vendorFields);
+            //var vendorFields = new String[] { "id", "vendorname" };
 
-            foreach (Vendor item in vendorData)
-            {
-               Console.WriteLine(item.VendorName);
-            }
-            Console.WriteLine();
-            VendorsReport.GetVendorReport(new DateTime(2000, 10, 10), new DateTime(2016, 10, 10));
+            //var vendorData = OracleToSQL.OracleToSQL.GetVendorTable("Barish", "admin", "admin", "Vendors", vendorFields);
+
+            //foreach (Vendor item in vendorData)
+            //{
+            //   Console.WriteLine(item.VendorName);
+            //}
+            //Console.WriteLine();
+            //VendorsReport.GetVendorReport(new DateTime(2000, 10, 10), new DateTime(2016, 10, 10));
 
         }
     }
