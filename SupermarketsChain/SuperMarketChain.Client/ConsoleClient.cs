@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SuperMarketChain.Data;
 using OracleToSQL;
+using SuperMarketChain.Data.Utils;
 
 namespace SuperMarketChain.Client
 {
@@ -34,6 +35,9 @@ namespace SuperMarketChain.Client
             {
                Console.WriteLine(item.VendorName);
             }
+            Console.WriteLine();
+            VendorsReport.GetVendorReport(new DateTime(2000, 10, 10), new DateTime(2016, 10, 10));
+
         }
     }
 }
