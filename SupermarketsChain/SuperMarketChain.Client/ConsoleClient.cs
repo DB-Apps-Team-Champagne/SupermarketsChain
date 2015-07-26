@@ -18,17 +18,21 @@ namespace SuperMarketChain.Client
             ex.folderLoop();
             ex.deleteFolder();
 
-            //var context = new SupermarketChainContext();
+            var context = new SupermarketChainContext();
 
             //var productCount = context.Products.Count();
 
             //Console.WriteLine(productCount);
 
+
             //var prodFields = new String[] { "id", "vendorid", "productname", "measureid", "price" };
 
-            //var prodData = OracleToSQL.OracleToSQL.GetProductTable("Barish", "admin", "admin", "PRODUCTS", prodFields);
+            var prodData = OracleToSQL.OracleToSQL.GetProductTable("EVGENI-PC", "admin", "1111", "PRODUCTS", prodFields);
 
+
+            //var prodData = OracleToSQL.OracleToSQL.GetProductTable("Barish", "admin", "admin", "PRODUCTS", prodFields);
             //var measFields = new String[] { "id", "measurename" };
+            var measData = OracleToSQL.OracleToSQL.GetMeasureTable("EVGENI-PC", "admin", "1111", "Measures", measFields);
 
             //var measData = OracleToSQL.OracleToSQL.GetMeasureTable("Barish", "admin", "admin", "Measures", measFields);
 
@@ -43,6 +47,13 @@ namespace SuperMarketChain.Client
             //Console.WriteLine();
             //VendorsReport.GetVendorReport(new DateTime(2000, 10, 10), new DateTime(2016, 10, 10));
 
+            var vendorData = OracleToSQL.OracleToSQL.GetVendorTable("EVGENI-PC", "admin", "1111", "Vendors", vendorFields);
+
+            OracleToSQL.OracleToSQL.UploadVendorsToSQL(vendorData, context);
+
+            OracleToSQL.OracleToSQL.UploadMeasuresToSQL(measData, context);
+
+            OracleToSQL.OracleToSQL.UploadProductsToSQL(prodData, context);
         }
     }
 }
