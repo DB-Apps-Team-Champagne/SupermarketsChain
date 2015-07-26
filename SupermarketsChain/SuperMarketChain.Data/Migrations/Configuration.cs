@@ -12,6 +12,7 @@ namespace SuperMarketChain.Data.Migrations
         {
             AutomaticMigrationsEnabled = true;
             ContextKey = "SuperMarketChain.Data.SupermarketChainContext";
+            
         }
 
         protected override void Seed(SuperMarketChain.Data.SupermarketChainContext context)
@@ -124,6 +125,33 @@ namespace SuperMarketChain.Data.Migrations
                     VendorId = 4,
                     Price = 1.49m,
                     ProductName = "Sok ot praskovi"
+                });
+            }
+
+            if (context.SaleReports.Count() == 0)
+            {
+                context.SaleReports.Add(new SaleReport
+                {
+                    ProductId = 1,
+                    Quantity = 15d,
+                    SaleTime = DateTime.Now,
+                    VendorId = 2
+                });
+
+                context.SaleReports.Add(new SaleReport
+                {
+                    ProductId = 2,
+                    Quantity = 125d,
+                    SaleTime = DateTime.Now,
+                    VendorId = 2
+                });
+
+                context.SaleReports.Add(new SaleReport
+                {
+                    ProductId = 5,
+                    Quantity = 56d,
+                    SaleTime = DateTime.Now,
+                    VendorId = 3
                 });
             }
         }
