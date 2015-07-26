@@ -12,7 +12,7 @@ namespace SuperMarketChain.Model
         [Key]
         public int Id { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(50)]
         public string ProductName { get; set; }
 
         [Required]

@@ -7,6 +7,8 @@ using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
 using Oracle.DataAccess;
 using System.Data;
+using SuperMarketChain.Data;
+using SuperMarketChain.Model;
 
 namespace OracleToSQL
 {
@@ -122,6 +124,118 @@ namespace OracleToSQL
             conn.Dispose();
 
             return vendors;
+        }
+
+        public static string GetVendorName(string host, string oraUser, string oraPass, int vendorId)
+        {
+            string oradb = "Data Source=(DESCRIPTION="
+             + "(ADDRESS=(PROTOCOL=TCP)(HOST=" + host + ")(PORT=1521))"
+             + "(CONNECT_DATA=(SERVICE_NAME=XE)));"
+             + "User Id=" + oraUser + ";Password=" + oraPass + ";";
+            //string oradb = "Data Source=XE;User Id=" + oraUser + ";Password=" + oraPass + ";";
+
+            OracleConnection conn = new OracleConnection(oradb);
+            conn.Open();
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+
+            cmd.CommandText = "select vendorname from vendors where id = " + vendorId;
+
+            cmd.CommandType = CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+
+            string vendorName = "";
+
+            while (dr.Read())
+            {
+                vendorName = dr[0].ToString();
+            }
+
+            conn.Dispose();
+
+            return vendorName;
+        }
+        public static void UploadProductsToSQL(ICollection<Product> products, SupermarketChainContext context)
+        {
+            foreach (var product in products)
+            {
+                var vendorName = GetVendorName("EVGENI-PC", "admin", "1111", product.VendorId);
+                var vendorId = context.Vendors.Where(v => v.VendorName.Equals(vendorName)).Select(v => v.ID).FirstOrDefault();
+                var productSQL = new SuperMarketChain.Model.Product()
+                {
+                    VendorId = vendorId,
+                    ProductName = product.ProductName,
+                    MeasureID = product.MeasureId,
+                    Price = product.Price
+                };
+                if (context.Products.Where(p => p.ProductName.Equals(productSQL.ProductName)).Count() == 0)
+                {
+                    context.Products.Add(productSQL);
+                    Console.WriteLine("Product " + productSQL.ProductName + " will be uploaded to SQL db");
+                }
+                else
+                {
+                    Console.WriteLine("Product " + productSQL.ProductName + " is already in SQL db and will not be uploaded.");
+                }
+            }
+
+            if (context.ChangeTracker.HasChanges())
+            {
+                context.SaveChanges();
+            }
+            
+        }
+
+        public static void UploadVendorsToSQL(ICollection<Vendor> vendors, SupermarketChainContext context)
+        {
+            foreach (var vendor in vendors)
+            {
+                var vendorSQL = new SuperMarketChain.Model.Vendor()
+                {
+                    VendorName = vendor.VendorName
+                };
+
+                if (context.Vendors.Where(v => v.VendorName.Equals(vendorSQL.VendorName)).Count() == 0)
+                {
+                    context.Vendors.Add(vendorSQL);
+                    Console.WriteLine("Vendor " + vendorSQL.VendorName + " will be uploaded to SQL db." + vendorSQL.VendorName.Count());
+                }
+                else
+                {
+                    Console.WriteLine("Vendor " + vendorSQL.VendorName + "  is already in SQL db and will not be uploaded.");
+                }
+            }
+
+            if (context.ChangeTracker.HasChanges())
+            {
+                context.SaveChanges();
+            }
+        }
+
+        public static void UploadMeasuresToSQL(ICollection<Measure> measures, SupermarketChainContext context)
+        {
+            foreach (var measure in measures)
+            {
+                var measureSQL = new SuperMarketChain.Model.Measure()
+                {
+                    ID = measure.Id,
+                    MeasureName = measure.MeasureName
+                };
+
+                if (context.Measures.Where(m => m.MeasureName.Equals(measureSQL.MeasureName)).Count() == 0)
+                {
+                    context.Measures.Add(measureSQL);
+                    Console.WriteLine("Measure " + measureSQL.MeasureName + " will be uploaded to SQL db.");
+                }
+                else
+                {
+                    Console.WriteLine("Measure " + measureSQL.MeasureName + " is already in SQL db and will not be uploaded.");
+                }
+            }
+            if (context.ChangeTracker.HasChanges())
+            {
+                context.SaveChanges();
+            }
         }
     }
 }

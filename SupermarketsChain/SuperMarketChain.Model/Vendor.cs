@@ -19,7 +19,7 @@ namespace SuperMarketChain.Model
         public int ID { get; set; }
 
         [Required]
-        [MaxLength(30)]
+        [MaxLength(50)]
         public string VendorName { get; set; }
 
         public virtual ICollection<Product> Products {
