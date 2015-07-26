@@ -13,6 +13,7 @@ namespace SuperMarketChain.Model
         public int ID { get; set; }
 
         [Required]
+        [MaxLength(20)]
         public string MeasureName { get; set; }
     }
 }
