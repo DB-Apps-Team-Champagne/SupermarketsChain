@@ -28,5 +28,7 @@ namespace SuperMarketChain.Data
         public IDbSet<Vendor> Vendors { get; set; }
 
         public IDbSet<SaleReport> SaleReports { get; set; }
+
+        public IDbSet<Expence> Expences { get; set; }
     }
 }
