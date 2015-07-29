@@ -4,3 +4,12 @@ F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsCh
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.csprojResolveAssemblyReference.cache
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.dll
 F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\obj\Debug\OracleToSQL.pdb
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\OracleToSQL.dll.config
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\EntityFramework.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\EntityFramework.SqlServer.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\SuperMarketChain.Data.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\SyperMarketChain.Model.dll
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\SuperMarketChain.Data.pdb
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\SyperMarketChain.Model.pdb
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\EntityFramework.xml
+F:\softuni\Database - Applications\Team-project\SupermarketsChain\SupermarketsChain\OracleToSQL\bin\Debug\EntityFramework.SqlServer.xml
