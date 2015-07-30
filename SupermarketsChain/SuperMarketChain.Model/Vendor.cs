@@ -10,10 +10,12 @@ namespace SuperMarketChain.Model
     public class Vendor
     {
         private ICollection<Product> products;
+        private ICollection<Expence> expenses;
 
         public Vendor()
         {
             this.products = new HashSet<Product>();
+            this.expenses = new HashSet<Expence>();
         }
         [Key]
         public int ID { get; set; }
@@ -25,6 +27,12 @@ namespace SuperMarketChain.Model
         public virtual ICollection<Product> Products {
             get { return this.products; }
             set { this.products = value; }
+        }
+
+        public virtual ICollection<Expence> Expences 
+        {
+            get { return this.expenses; }
+            set { this.expenses = value; }
         }
     }
 }

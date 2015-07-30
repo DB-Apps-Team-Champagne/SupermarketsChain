@@ -13,9 +13,7 @@ namespace SuperMarketChain.Client
     public class Excel
     {
 
-        private string folderPath = @"D:\DBTeamwork\unpack";
-
-
+        private string folderPath = @"../..\..\Excel";
 
         public void folderLoop()
         {
@@ -43,8 +41,8 @@ namespace SuperMarketChain.Client
 
         public void unZip()
         {
-            string zipFileName = @"D:\DBTeamwork\New folder\Sample-Sales-Reports.zip";
-            var targetDir = @"D:\DBTeamwork\unpack";
+            string zipFileName = @"..\..\..\Sample-Sales-Reports.zip"; // change
+            var targetDir = @"..\..\..\Excel";
             FastZip fastZip = new FastZip();
             string fileFilter = null;
 
