@@ -6,7 +6,9 @@ namespace SuperMarketChain.Data
     using System.Linq;
     using Migrations;
     using System.Data.Entity.ModelConfiguration.Conventions;
+    using SuperMarketChain.MySQL;
 
+    [DbConfigurationType(typeof(MultipleDbConfiguration))]
     public class SupermarketChainContext : DbContext
     {
         public SupermarketChainContext()

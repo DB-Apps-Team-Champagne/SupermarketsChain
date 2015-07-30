@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2B97ADDF-AF45-4C50-8F6C-5FC35A092999}</ProjectGuid>
+    <ProjectGuid>{744D2629-9C66-4F07-BE34-6766EC7E0AC5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SuperMarketChain.Data</RootNamespace>
-    <AssemblyName>SuperMarketChain.Data</AssemblyName>
+    <RootNamespace>SuperMarketChain.MySQL</RootNamespace>
+    <AssemblyName>SuperMarketChain.MySQL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,27 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-<<<<<<< HEAD
-    <Reference Include="itextsharp">
-      <HintPath>..\Library\itextsharp.dll</HintPath>
+    <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.9.7\lib\net45\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="itextsharp.pdfa">
-      <HintPath>..\Library\itextsharp.pdfa.dll</HintPath>
+    <Reference Include="mysql.data.entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entities.6.8.3.0\lib\net45\mysql.data.entity.EF6.dll</HintPath>
     </Reference>
-    <Reference Include="itextsharp.xtra">
-      <HintPath>..\Library\itextsharp.xtra.dll</HintPath>
-    </Reference>
-=======
-    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
->>>>>>> ee4431d... #7 MSSQL to MySQL import
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -64,12 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\MySqlHistoryContext.cs" />
+    <Compile Include="Migrations\MySqlInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SupermarketChainContext.cs" />
-    <Compile Include="Utils\GenerateSalesReportPdf.cs" />
-    <Compile Include="Utils\LoadExpences.cs" />
-    <Compile Include="Utils\MySQL.cs" />
-    <Compile Include="Utils\VendorsReport.cs" />
+    <Compile Include="SupermarketChain.MySQL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -79,10 +69,6 @@
     <ProjectReference Include="..\SuperMarketChain.Model\SuperMarketChain.Model.csproj">
       <Project>{7f9cbdde-1e76-4195-941d-2e6c58bca3a2}</Project>
       <Name>SuperMarketChain.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SuperMarketChain.MySQL\SuperMarketChain.MySQL.csproj">
-      <Project>{744d2629-9c66-4f07-be34-6766ec7e0ac5}</Project>
-      <Name>SuperMarketChain.MySQL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
