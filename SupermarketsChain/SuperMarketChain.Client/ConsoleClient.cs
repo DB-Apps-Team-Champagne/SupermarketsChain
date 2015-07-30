@@ -13,16 +13,16 @@ namespace SuperMarketChain.Client
     {
         static void Main()
         {
-            Excel ex = new Excel();
-            ex.unZip();
-            ex.folderLoop();
-            ex.deleteFolder();
+            //Excel ex = new Excel();
+            //ex.unZip();
+            //ex.folderLoop();
+            //ex.deleteFolder();
 
             var context = new SupermarketChainContext();
 
             var productCount = context.Products.Count();
 
-            //Console.WriteLine(productCount);
+            Console.WriteLine(productCount);
 
             //var prodFields = new String[] { "id", "vendorid", "productname", "measureid", "price" };
 
@@ -45,6 +45,8 @@ namespace SuperMarketChain.Client
             //VendorsReport.GetVendorReport(new DateTime(2000, 10, 10), new DateTime(2016, 10, 10));
 
             //LoadExpences.Load();
+
+            GenerateSalesReportPdf.Generate(context, new DateTime(2000, 10, 10), new DateTime(2016, 10, 10));
 
         }
     }
