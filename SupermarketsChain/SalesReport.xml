@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sales>
+  <sale vendor="Zagorka OOD">
+    <summary date="30/07/2015" sum="14.85" />
+    <summary date="30/07/2015" sum="61.25" />
+  </sale>
+  <sale vendor="Pesho Birata Ltd">
+    <summary date="30/07/2015" sum="279.44" />
+  </sale>
+</sales>

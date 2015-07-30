@@ -13,14 +13,14 @@ namespace SuperMarketChain.Client
     {
         static void Main()
         {
-            //Excel ex = new Excel();
-            //ex.unZip();
-            //ex.folderLoop();
-            //ex.deleteFolder();
+            Excel ex = new Excel();
+            ex.unZip();
+            ex.folderLoop();
+            ex.deleteFolder();
 
-            //var context = new SupermarketChainContext();
+            var context = new SupermarketChainContext();
 
-            //var productCount = context.Products.Count();
+            var productCount = context.Products.Count();
 
             //Console.WriteLine(productCount);
 
@@ -41,9 +41,10 @@ namespace SuperMarketChain.Client
             //   Console.WriteLine(item.VendorName);
             //}
             //Console.WriteLine();
+
             //VendorsReport.GetVendorReport(new DateTime(2000, 10, 10), new DateTime(2016, 10, 10));
 
-            LoadExpences.Load();
+            //LoadExpences.Load();
 
         }
     }

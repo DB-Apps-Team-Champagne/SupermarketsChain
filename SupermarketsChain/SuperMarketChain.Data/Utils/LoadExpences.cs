@@ -36,6 +36,8 @@
                 }
             }
             context.SaveChanges();
+
+            Console.WriteLine("Expences from Expences.xml have been loaded!");
         }
     }
 }
