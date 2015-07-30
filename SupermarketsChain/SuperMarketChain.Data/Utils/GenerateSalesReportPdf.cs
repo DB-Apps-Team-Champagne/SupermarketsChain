@@ -1,68 +1,75 @@
 ﻿namespace SuperMarketChain.Data.Utils
 {
     using System;
-    using System.IO;
-    using System.Linq;
     using System.Collections.Generic;
+    using System.Linq;
+    using System.IO;
     using iTextSharp.text;
     using iTextSharp.text.pdf;
-    using Model;
+    using iTextSharp.text.html.simpleparser;
+    using Data;
 
-    public static class GenerateSalesReportPdf
+    public static class GenerateSaleReportsPdf
     {
+
         public static void Generate(SupermarketChainContext context, DateTime startDate, DateTime endDate)
         {
             var saleReports = context.SaleReports
                 .Where(sl => sl.SaleTime >= startDate && sl.SaleTime <= endDate)
                 .Select(sl => new
                 {
-                    Productname = sl.Product.ProductName,
+                    ProductName = sl.Product.ProductName,
                     Quantity = sl.Quantity,
                     UnitPrice = sl.Product.Price,
-                    Location = sl.Product.Vendor.VendorName,
-                    SaleDate = sl.SaleTime
+                    Locaion = sl.Product.Vendor.VendorName,
+                    SaleTime = sl.SaleTime
                 });
 
-            var groupedByDate = new Dictionary<DateTime, HashSet<SaleReportInfo>>();
+            var saleReportsByDate = new Dictionary<DateTime, HashSet<SaleReportInfo>>();
 
-            foreach (var i in saleReports)
+            foreach (var sl in saleReports)
             {
-                if (groupedByDate.ContainsKey(i.SaleDate))
+                var date = sl.SaleTime.Date;
+                if (saleReportsByDate.ContainsKey(date))
                 {
-                    groupedByDate[i.SaleDate].Add(new SaleReportInfo(i.Productname, i.Quantity, i.UnitPrice, i.Location));
+                    saleReportsByDate[date].Add(new SaleReportInfo(sl.ProductName, sl.Quantity, sl.UnitPrice, sl.Locaion));
                 }
                 else
                 {
-                    var saleReportsHashSet = new HashSet<SaleReportInfo>()
+                    var hashSet = new HashSet<SaleReportInfo>()
                     {
-                        new SaleReportInfo(i.Productname, i.Quantity, i.UnitPrice, i.Location)
+                        new SaleReportInfo(sl.ProductName, sl.Quantity, sl.UnitPrice, sl.Locaion)
                     };
-                    groupedByDate.Add(i.SaleDate, saleReportsHashSet);
+                    saleReportsByDate.Add(date, hashSet);
                 }
             }
 
-            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 35, 35, 70, 60);
-            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream("../../../SaleReports.pdf", FileMode.Create));
+            var orderedByDate = saleReportsByDate.OrderBy(sl => sl.Key);
+
+            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream("../../../SalesReport.pdf", FileMode.Create));
 
             doc.Open();
 
-            PdfPTable table = new PdfPTable(5);
-            float[] widths = new float[] { 100f, 100f, 100f, 100f, 100f };
+            var table = new PdfPTable(5);
             table.WidthPercentage = 100;
 
-            PdfPCell header = new PdfPCell(new Phrase("Aggregated Sales Report"));
+
+            Font boldFont = new Font(Font.FontFamily.TIMES_ROMAN, 15, Font.BOLD);
+            var header = new PdfPCell(new Phrase("Aggregated Sales Report", boldFont));
+
             header.Colspan = 5;
             header.HorizontalAlignment = 1;
             table.AddCell(header);
 
-            foreach (var sl in groupedByDate)
+            foreach (var sl in orderedByDate)
             {
-                var date = new PdfPCell(new Phrase(String.Format("{0:dd-MMM-yyyy}", sl.Key)));
-                date.Colspan = 5;
-                date.BackgroundColor = BaseColor.LIGHT_GRAY;
-                table.AddCell(date);
+                var dateCell = new PdfPCell(new Phrase(string.Format("{0:dd-MMM-yyyy}", sl.Key)));
+                dateCell.Colspan = 5;
+                dateCell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                table.AddCell(dateCell);
 
-                PdfPCell h1 = new PdfPCell(new Phrase("Product"));
+                var h1 = new PdfPCell(new Phrase("Product"));
                 h1.BackgroundColor = BaseColor.GRAY;
                 table.AddCell(h1);
 
@@ -82,24 +89,24 @@
                 h1.BackgroundColor = BaseColor.GRAY;
                 table.AddCell(h1);
 
-                foreach (var s in sl.Value)
+                foreach (var slr in sl.Value)
                 {
-                    table.AddCell(s.ProductName);
-                    table.AddCell(s.Quantity.ToString());
-                    table.AddCell(s.UnitPrice.ToString());
-                    table.AddCell(s.Location);
-                    table.AddCell(s.Sum.ToString());
+                    table.AddCell(new PdfPCell(new Phrase(slr.ProductName)));
+                    table.AddCell(new PdfPCell(new Phrase(slr.Quantity.ToString())));
+                    table.AddCell(new PdfPCell(new Phrase(slr.UnitPrice.ToString())));
+                    table.AddCell(new PdfPCell(new Phrase(slr.Location)));
+                    table.AddCell(new PdfPCell(new Phrase(slr.Sum.ToString())));
                 }
+                string msg = string.Format("Total sum for {0}:", (string.Format("{0:dd-MMM-yyyy}", sl.Key)));
+                var msgCell = new PdfPCell(new Phrase(msg));
+                msgCell.Colspan = 4;
+                msgCell.HorizontalAlignment = 2;
+                table.AddCell(msgCell);
 
-                var msg = new PdfPCell(new Phrase(string.Format("Total sum for {0}: ", String.Format("{0:dd-MMM-yyyy}", sl.Key))));
-                msg.HorizontalAlignment = 2;
-                msg.Colspan = 4;
-                table.AddCell(msg);
 
-                var totalSum = sl.Value.Sum(slr => slr.Sum);
+                var sum = sl.Value.Sum(s => s.Sum);
+                table.AddCell(new PdfPCell(new Phrase(sum.ToString())));
 
-                var totalSumCell = new PdfPCell(new Phrase(totalSum.ToString()));
-                table.AddCell(totalSumCell);
             }
 
             doc.Add(table);
@@ -108,14 +115,15 @@
 
         private class SaleReportInfo
         {
-            public SaleReportInfo(string pName, double quantity, decimal unitPrice, string location)
+            public SaleReportInfo(string productName, double quantity, decimal unitPrice, string Location)
             {
-                this.ProductName = pName;
+                this.ProductName = productName;
                 this.Quantity = quantity;
                 this.UnitPrice = unitPrice;
-                this.Location = location;
+                this.Location = Location;
                 this.Sum = unitPrice * (decimal)quantity;
             }
+
             public string ProductName { get; set; }
 
             public double Quantity { get; set; }
