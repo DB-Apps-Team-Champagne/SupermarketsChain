@@ -15,27 +15,19 @@ namespace SuperMarketChain.Client
     {
         static void Main()
         {
-<<<<<<< HEAD
-            //Excel ex = new Excel();
-            //ex.unZip();
-            //ex.folderLoop();
-            //ex.deleteFolder();
-
-=======
->>>>>>> ee4431d... #7 MSSQL to MySQL import
             var context = new SupermarketChainContext();
 
-            SuperMarketChain.Data.Utils.MySQL.CreateDBIfNonExistent();
+            //SuperMarketChain.Data.Utils.MySQL.CreateDBIfNonExistent();
 
-            SuperMarketChain.Data.Utils.MySQL.ImportVendorsFromMSSqlToMySQL(context);
+            //SuperMarketChain.Data.Utils.MySQL.ImportVendorsFromMSSqlToMySQL(context);
 
-            SuperMarketChain.Data.Utils.MySQL.ImportMeasuresFromMSSqlToMySQL(context);
+            //SuperMarketChain.Data.Utils.MySQL.ImportMeasuresFromMSSqlToMySQL(context);
 
-            SuperMarketChain.Data.Utils.MySQL.ImportProductsFromMSSqlToMySQL(context);
+            //SuperMarketChain.Data.Utils.MySQL.ImportProductsFromMSSqlToMySQL(context);
 
-            SuperMarketChain.Data.Utils.MySQL.ImportSalesReportsFromMSSqlToMySQL(context);
+            //SuperMarketChain.Data.Utils.MySQL.ImportSalesReportsFromMSSqlToMySQL(context);
 
-            SuperMarketChain.Data.Utils.MySQL.ImportExprencesFromMSSqlToMySQL(context);
+            //SuperMarketChain.Data.Utils.MySQL.ImportExprencesFromMSSqlToMySQL(context);
 
             //Excel ex = new Excel();
             //ex.unZip();
@@ -44,7 +36,7 @@ namespace SuperMarketChain.Client
 
             //var productCount = context.Products.Count();
 
-            Console.WriteLine(productCount);
+            //Console.WriteLine(productCount);
 
             //var prodFields = new String[] { "id", "vendorid", "productname", "measureid", "price" };
 
