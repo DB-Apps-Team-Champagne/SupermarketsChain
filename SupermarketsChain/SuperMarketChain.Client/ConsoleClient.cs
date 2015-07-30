@@ -46,7 +46,7 @@ namespace SuperMarketChain.Client
 
             //LoadExpences.Load();
 
-            GenerateSaleReportsPdf.Generate(context, new DateTime(2000, 10, 10), new DateTime(2016, 10, 10));
+            GenerateSalesReportPdf.Generate(context, new DateTime(2000, 10, 10), new DateTime(2016, 10, 10));
 
         }
     }
