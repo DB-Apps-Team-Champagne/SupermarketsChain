@@ -13,11 +13,13 @@ namespace SuperMarketChain.MongoDB
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
 
-        public string Product { get; set; }
+        public int ProductID { get; set; }
 
-        public double Quantity { get; set; }
+        public string ProductName { get; set; }
 
-        public DateTime SaleTime { get; set; }
+        public double QuantitySold { get; set; }
+
+        public double income { get; set; }
 
         public string Vendor { get; set; }
 
