@@ -6,6 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using SuperMarketChain.Data;
 using SuperMarketChain.Model;
+using MongoDB.Bson.Serialization;
+using MongoDB.Driver.Operations;
+using MongoDB.Bson;
+using ExtensionsMethods;
 
 
 namespace SuperMarketChain.MongoDB
@@ -21,6 +25,7 @@ namespace SuperMarketChain.MongoDB
             var saleReports = db.GetCollection<MongoDBObject>("SalesByProductReports");
 
             var context = new SupermarketChainContext();
+
             var reports = context.SaleReports.Select(s => new
             {
                 s.Product.ProductName,
@@ -29,18 +34,22 @@ namespace SuperMarketChain.MongoDB
                 s.Vendor.VendorName
             });
 
-            foreach (var item in reports)
-            {
-                saleReports.Insert(new MongoDBObject()
-                {
-                   Product = item.ProductName,
-                   Quantity = item.Quantity,
-                   SaleTime = item.SaleTime,
-                   Vendor = item.VendorName
-                });
-            }
+            //foreach (var item in reports)
+            //{
+            //    Console.WriteLine("added");
+
+            //    saleReports.Insert(new MongoDBObject()
+            //    {
+            //        Id = ObjectId.GenerateNewId().ToString(),
+            //        Product = item.ProductName,
+            //        Quantity = item.Quantity,
+            //        SaleTime = item.SaleTime,
+            //        Vendor = item.VendorName
+            //    });
+            //}
 
 
+            saleReports.FindAll().Select(p => p.Vendor).Print();
             
         }
     }
