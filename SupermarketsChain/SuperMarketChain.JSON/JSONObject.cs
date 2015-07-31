@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperMarketChain.JSON
 {
-    class JSONObject
+    public class JSONObject
     {
         public int productID { get; set; }
 

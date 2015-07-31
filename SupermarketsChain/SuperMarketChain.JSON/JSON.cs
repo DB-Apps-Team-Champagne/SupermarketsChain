@@ -14,9 +14,12 @@ namespace SuperMarketChain.JSON
     {
         static void Main()
         {
-
+            DateTime startDate = DateTime.Now;
+            DateTime endDate = DateTime.Now;
             var context = new SupermarketChainContext();
-            var productData = context.SaleReports.GroupBy(sl => sl.ProductId).Select(g => new
+            var productData = context.SaleReports
+                .Where(s => DateTime.Compare(s.SaleTime, startDate) > 0 && DateTime.Compare(s.SaleTime, endDate) < 0)
+                .GroupBy(sl => sl.ProductId).Select(g => new
             {
                 sum = g.Sum(p => p.Quantity),
                 productID = g.Select(p => p.ProductId),
