@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseImport.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="MongoDBObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
