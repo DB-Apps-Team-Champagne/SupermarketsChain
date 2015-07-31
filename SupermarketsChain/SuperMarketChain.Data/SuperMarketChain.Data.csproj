@@ -51,6 +51,9 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\Library\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -66,6 +69,7 @@
     <Compile Include="Utils\GenerateSalesReportPdf.cs" />
     <Compile Include="Utils\LoadExpences.cs" />
     <Compile Include="Utils\MySQL.cs" />
+    <Compile Include="Utils\SQLiteReader.cs" />
     <Compile Include="Utils\VendorsReport.cs" />
   </ItemGroup>
   <ItemGroup>
