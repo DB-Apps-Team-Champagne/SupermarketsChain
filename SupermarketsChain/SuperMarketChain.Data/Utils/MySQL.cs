@@ -166,10 +166,7 @@ namespace SuperMarketChain.Data.Utils
                         var counter = 0;
                         foreach (var saleReport in salesReportsInMSSQL)
                         {
-                            if (contextMySQL.SaleReports.Where(s => s.ProductId == saleReport.ProductId 
-                                && s.VendorId == saleReport.VendorId 
-                                && DateTime.Compare(s.SaleTime, saleReport.SaleTime) == 0
-                                && s.Quantity == saleReport.Quantity).Any())
+                            if(saleExist(saleReport, contextMySQL))
                             {
                                 Console.WriteLine("ID:{0}, Time:{1}, is present at the MySQL table and will not be added.", saleReport.Id, saleReport.SaleTime);
                             }
@@ -190,8 +187,9 @@ namespace SuperMarketChain.Data.Utils
                         mySqlDBTransaction.Commit();
                         Console.WriteLine("{0} salereports added to MySQL database", counter);
                     }
-                    catch (Exception)
+                    catch (Exception e)
                     {
+                        Console.WriteLine(e.Message);
                         mySqlDBTransaction.Rollback();
                     }
                 }
@@ -212,7 +210,7 @@ namespace SuperMarketChain.Data.Utils
                         var counter = 0;
                         foreach (var expence in expencesInMSSQL)
                         {
-                            if (contextMySQL.Expences.Where(e => DateTime.Compare(e.Date, expence.Date) != 0).Any())
+                            if (expenceExist(expence, contextMySQL))
                             {
                                 Console.WriteLine("ID:{0}, Time:{1}, is present at the MySQL table and will not be added.", expence.Id, expence.Date);
                             }
@@ -241,10 +239,40 @@ namespace SuperMarketChain.Data.Utils
             }
             
         }
-        private static bool saleExist(int productId, double quantity, DateTime time, int vendId)
+
+        private static bool saleExist(Model.SaleReport saleReport, SupermarketChainMySQL mysqlContext)
         {
-            var cont = new SupermarketChainMySQL(MySQL.connectionString);
-            return cont.SaleReports.Any(s => s.ProductId == productId && s.Quantity == quantity && s.VendorId == vendId && DateTime.Compare(s.SaleTime, time) == 0);
+            var cont = mysqlContext;
+
+            var matches =  cont.SaleReports.Where(
+                s => s.ProductId == saleReport.ProductId
+                    && s.Quantity == saleReport.Quantity
+                    && s.VendorId == saleReport.VendorId).ToList();
+            foreach (var match in matches)
+            {
+                var matchTimeWithoutMileSeconds = match.SaleTime.AddMilliseconds(-match.SaleTime.Millisecond);
+                var saleReportTimeWithoutMileSeconds = saleReport.SaleTime.AddMilliseconds(-saleReport.SaleTime.Millisecond);
+                return matchTimeWithoutMileSeconds.Equals(saleReportTimeWithoutMileSeconds);
+            }
+            return false;        
         }
+
+        private static bool expenceExist(Model.Expence expence, SupermarketChainMySQL mysqlContext)
+        {
+            var cont = mysqlContext;
+
+            var matches = cont.Expences.Where(
+                e => e.VendorId.Equals(expence.VendorId)
+                    && e.Amount.Equals(expence.Amount)).ToList();
+
+            foreach (var match in matches)
+            {
+                var matchTimeWithoutMileSeconds = match.Date.AddMilliseconds(-match.Date.Millisecond);
+                var saleReportTimeWithoutMileSeconds = expence.Date.AddMilliseconds(-expence.Date.Millisecond);
+                return matchTimeWithoutMileSeconds.Equals(saleReportTimeWithoutMileSeconds);
+            }
+            return false;
+        }
+
     }
 }

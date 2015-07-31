@@ -17,17 +17,19 @@ namespace SuperMarketChain.Client
         {
             var context = new SupermarketChainContext();
 
-            //SuperMarketChain.Data.Utils.MySQL.CreateDBIfNonExistent();
+            var mysqlContext = new SupermarketChainMySQL(SuperMarketChain.Data.Utils.MySQL.connectionString);
 
-            //SuperMarketChain.Data.Utils.MySQL.ImportVendorsFromMSSqlToMySQL(context);
+            SuperMarketChain.Data.Utils.MySQL.CreateDBIfNonExistent();
 
-            //SuperMarketChain.Data.Utils.MySQL.ImportMeasuresFromMSSqlToMySQL(context);
+            SuperMarketChain.Data.Utils.MySQL.ImportVendorsFromMSSqlToMySQL(context);
 
-            //SuperMarketChain.Data.Utils.MySQL.ImportProductsFromMSSqlToMySQL(context);
+            SuperMarketChain.Data.Utils.MySQL.ImportMeasuresFromMSSqlToMySQL(context);
 
-            //SuperMarketChain.Data.Utils.MySQL.ImportSalesReportsFromMSSqlToMySQL(context);
+            SuperMarketChain.Data.Utils.MySQL.ImportProductsFromMSSqlToMySQL(context);
 
-            //SuperMarketChain.Data.Utils.MySQL.ImportExprencesFromMSSqlToMySQL(context);
+            SuperMarketChain.Data.Utils.MySQL.ImportSalesReportsFromMSSqlToMySQL(context);
+
+            SuperMarketChain.Data.Utils.MySQL.ImportExprencesFromMSSqlToMySQL(context);
 
             //Excel ex = new Excel();
             //ex.unZip();
@@ -60,7 +62,7 @@ namespace SuperMarketChain.Client
 
             //LoadExpences.Load();
 
-            GenerateSalesReportPdf.Generate(context, new DateTime(2000, 10, 10), new DateTime(2016, 10, 10));
+            //GenerateSalesReportPdf.Generate(context, new DateTime(2000, 10, 10), new DateTime(2016, 10, 10));
 
         }
     }
